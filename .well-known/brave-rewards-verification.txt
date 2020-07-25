@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: plaiddroid.github.io
+Token: ed42c4e8d84666cdadc65bc81bf77f1a38dacd9485b00841605ce72fbaae2889
