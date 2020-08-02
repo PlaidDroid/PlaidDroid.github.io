@@ -1,0 +1,12 @@
+# 01-Aug-2020 
+## 17:55:47 
+Started working on my website. This website is going to hold all the info about my projects and works. Currently hosting in github.io, but maybe, maybe, later on, I'll shift it to another domain. Currently working on integrating Themes & Memex, and planning to take off my blog off blogger.
+## 21:17:20 
+Sort of finished adding the theme setup(with the 'gotham' theme) and also the memex. Need to furnish the landing page.
+# 02-Aug-2020
+## 01:37:34 
+Still trying to figure out how to fit everything nicely in place. Tomorrow is Sunday and its already past bed time!
+## 16:47:25 
+Got the layout set, I guess so! Working on the contents now.
+## 23:40:05 
+Trying to load the contents of this file to the html. Learning how to do it.

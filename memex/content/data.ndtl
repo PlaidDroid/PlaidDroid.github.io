@@ -1,0 +1,22 @@
+var DATABASE = `
+Exploring PureData and Visual Programming
+  PERS : plaiddroid
+  SRCE : Blogger
+  LINK : https://leapingoverfences.blogspot.com/2020/07/exploring-puredata-and-visual.html
+  TYPE : article
+  DATE : 20-07-2020
+  TAGS : audio, programming
+  QOTE : 'I had been searching for a visual programming language for a time and then found this little treasure.' - plaiddroid
+  DONE : false
+  REVI : true  
+On Making My First Successful Pull Request, A Tale
+  PERS : plaiddroid
+  SRCE : Blogger
+  LINK : https://leapingoverfences.blogspot.com/2020/05/on-making-my-first-successful-pull.html
+  TYPE : article
+  DATE : 22-05-2020
+  TAGS : github
+  QOTE : 'I've had been poking around opensource for quite some time. I do not know why but I feel I have had this urge to give back to a society that had given so much to the radical.' - plaiddroid
+  DONE : false
+  REVI : true    
+`
