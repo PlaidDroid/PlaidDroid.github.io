@@ -10,7 +10,7 @@
     <script type="text/javascript" src="../scripts/loadLogs.js"></script>
 </head>
 
-<body>
+<body onload="readTextFile('logs')">
     <script> let theme = new Theme(); theme.install(); theme.start(); </script>
     <header>
         plaiddroid
@@ -23,11 +23,8 @@
             </div>
         </nav>
     </header>
-    <section>
-        <div class="content">
-            
-        </div>
-        <button type="button" onclick="loadDoc()">Change Content</button>
+    <section id="content">
+
     </section>
     <footer class="fl">
         <a href="https://github.com/PlaidDroid">

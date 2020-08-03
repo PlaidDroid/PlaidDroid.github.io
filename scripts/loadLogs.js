@@ -1,22 +1,37 @@
-// var file = File.create("../content/log");
-// var reader = new FileReader();
-
-// // var file = new File([], file, {type: 'text/plain'});
-// // reader.onload = function(e) {
-// //     var blob = new Blob([new Uint8Array(e.target.result)], {type: file.type });
-// //     console.log(blob);
-// //     console.log(file);
-// // };
-// // reader.readAsArrayBuffer(file);
-// reader.readAsText(file);
-// console.log(reader.result);
-function loadDoc() {
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-      if (this.readyState == 4 && this.status == 200) {
-       document.getElementsByClassName("content").innerHTML = "<p>"+this.responseText+"<p>";
+function readTextFile(file) {
+  let rawFile = new XMLHttpRequest();
+  rawFile.open("GET", file, true);
+  rawFile.onreadystatechange = function () {
+    if (rawFile.readyState === 4) {
+      if (rawFile.status === 200 || rawFile.status == 0) {
+        let allText = rawFile.responseText;
+        let lines = allText.split(/\r\n|\r|\n/);
+        let target = document.getElementById("content");
+        let newDiv;
+        let newSpan;
+        let newText;
+        lines.forEach(function (line, index, array) {
+          if (line.startsWith("# ")) {
+            newDiv = document.createElement("div");
+            newSpan = document.createElement("span");
+            newText = document.createTextNode(line);
+            newSpan.appendChild(newText);
+            newDiv.appendChild(newSpan);
+            target.appendChild(newDiv);
+          } else if (line.startsWith("##")) {
+            newSpan = document.createElement("span");
+            newText = document.createTextNode(line);
+            newSpan.appendChild(newText);
+            newDiv.appendChild(newSpan);
+            target.appendChild(newDiv);
+          } else {
+            newText = document.createTextNode(line);
+            newDiv.appendChild(newText);
+            target.appendChild(newDiv);
+          }
+        });
       }
-    };
-    xhttp.open("GET", "../content/logs.txt", true);
-    xhttp.send();
-  }
+    }
+  };
+  rawFile.send();
+}

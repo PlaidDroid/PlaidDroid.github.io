@@ -71,11 +71,18 @@ section div {
   background-color: var(--b_low);
   margin: 0.5% 0 0.5% 0;
   padding: 0.5%;
+  width: fit-content;
 }
 section div span {
   display: block;
+  margin-top: 5px;
   margin-bottom: 5px;
+}
+section div span:first-child{
   color: var(--f_med);
+}
+section div span{
+  color: var(--f_low);
 }
 footer {
   position: static;
