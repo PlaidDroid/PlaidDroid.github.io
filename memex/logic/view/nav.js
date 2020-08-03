@@ -9,7 +9,7 @@ function Nav() {
     let navContent = ``;
 
     navContent += `<div class="nav-itemgroup">`;
-    navContent += `<a href='/website/index.html' class="nav-item">`;
+    navContent += `<a href='../index.html' class="nav-item">`;
     navContent += `home`;
     navContent += `</a>`;
     navContent += `</div>`;
